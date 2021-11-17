@@ -94,6 +94,7 @@ img {
 .studio-header {
     color: var(--studio-header-color);
 }
+
 .webstudio {
     margin-right: 93px;
     font-family: Raleway;
@@ -123,6 +124,9 @@ img {
 }
 
 .header-li {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -164,8 +168,6 @@ img {
 }
 
 .footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 
@@ -218,6 +220,8 @@ img {
 .hero {
     background-color: var(--background-hero-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-container {
@@ -227,6 +231,7 @@ img {
 
 
 .hero-main-title {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -254,6 +259,7 @@ img {
 
 .features-ul {
     display: flex;
+
 }
 
 .features-li-text {
@@ -271,19 +277,22 @@ img {
     line-height: 1.14;
     color: var(--title-h3-color);
     text-transform: uppercase;
-    
 }
 .features-text {
     font-size: 14px;
     line-height: 1.7;
-    color: var(--main-text-color);
+    color: var(--main-text-color)
+    letter-spacing: 0.03em;
 }
 
 /*Чем-мы=занимаемся*/
 
 .we-do {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
+
+
 .we-do-container {
     text-align: center;
 }
@@ -301,7 +310,6 @@ img {
 .we-do-ul {
     display: flex;
     flex-wrap: wrap;
-
     margin-left: calc(-1 * var(--card-set-gap));
     margin-top: calc(-1 * var(--card-set-gap));
 }
