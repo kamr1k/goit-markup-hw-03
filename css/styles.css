@@ -87,6 +87,7 @@ img {
 }
 
 
+
 /*-------------------------Хэдер--------------*/
 
 .header {
@@ -127,16 +128,14 @@ img {
     display: flex;
 }
 
-.header-list-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 
 .header-list-item:not(:last-child) {
     margin-right: 50px;
 }
 
 .header-li {
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: block;
     font-weight: 500;
     font-size: 14px;
@@ -146,8 +145,7 @@ img {
 
 .header-li:focus,
 .header-li:hover {
-    color: var(--btn-text-color);
-    background-color: var(--highlight-color);
+    color: var(--btn-color);
 }
 
 .header-contact-ul {
@@ -175,6 +173,8 @@ img {
 /*-------------------------Футер*/
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-footer-color); 
 }
 
@@ -260,8 +260,8 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     letter-spacing: 0.06em;
-    min-width: 136px;
-    min-width: 30px;
+    width: 200px;
+    height: 50px;
 }
 
 /*Наши-сильные-стороны*/
@@ -278,6 +278,10 @@ img {
 
 .features-li-text {
     text-align: left;
+}
+
+.features-li {
+    width: 270px;
 }
 
 .features-li:not(:last-child) {
@@ -305,7 +309,6 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
 
 .we-do-container {
     text-align: center;
@@ -377,7 +380,7 @@ img {
 
 /*.team-li:not(:last-child) {
     margin-right: 30px;
- }*/
+}*/
 
 .team-li-text {
     padding-top: 30px;
@@ -412,8 +415,7 @@ img {
 .filter-ul {
     display: flex;
     justify-content: center;
-
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .filter-li {
@@ -428,7 +430,13 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    color: var(--filter-btn-color);
+    color: var(--filter-btn-color);    
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    border-radius: 4px;
+    border: hidden;
 }
 
 .filter-btn:hover, 
@@ -456,24 +464,19 @@ img {
     box-sizing: border-box;
 }
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-}   
 
 .gallery-link {
 
 }
 
+.gallery-h-text {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
 .gallery-h {
-    margin-top: 20px;
-    margin-left: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -482,7 +485,6 @@ img {
 
 .gallery-text {
     margin-top: 4px;
-    margin-left: 24px;
     font-size: 16px;
     line-height: 1.87;
     color: var(--main-text-color);
